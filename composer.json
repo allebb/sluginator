@@ -1,0 +1,24 @@
+{
+    "name": "ballen/sluginator",
+    "version": "1.0.0",
+    "description": "A simple URL slug creation library for PHP, simply feed it a string (such as a blog title) and it will create a URL friendly slug.",
+    "type": "library",
+    "keywords": ["slug", "url", "friendly"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bobby Allen",
+            "email": "ballen@bobbyallen.me",
+            "homepage": "http://bobbyallen.me",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ballen\\Sluginator\\": "lib/"
+        }
+    }
+}

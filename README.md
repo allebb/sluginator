@@ -11,7 +11,7 @@ Requirements
 License
 -------
 
-This client library is released under the MIT license, [LICENSE](a copy of the license) is provided in this package..
+This client library is released under the MIT license, a [copy of the license](LICENSE) is provided in this package..
 
 Examples
 --------

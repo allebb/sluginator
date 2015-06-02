@@ -1,6 +1,4 @@
-<?php
-
-namespace Ballen\Sluginator;
+<?php namespace Ballen\Sluginator;
 
 /**
  * Sluginator
@@ -28,11 +26,11 @@ class Slug
      * Array that stores values that you wish to remove (characters to delete from the string)
      * @var array
      */
-    protected $remove_values = [
+    protected $remove_values = array(
         "~", "`", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "=", "+", "[", "{", "]",
         "}", "\\", "|", ";", ":", "\"", "'", "&#8216;", "&#8217;", "&#8220;", "&#8221;", "&#8211;", "&#8212;",
         "â€”", "â€“", ",", "<", ".", ">", "/", "?"
-    ];
+    );
 
     /**
      * Array of characters that should be converted to the 'space' character.
@@ -83,11 +81,13 @@ class Slug
         $slug = str_replace($this->space_values, $this->space_char, $slug);
         $slug = str_replace($this->remove_values, '', $slug);
 
-        if ($this->url_encode)
+        if ($this->url_encode) {
             $slug = urlencode($slug);
+        }
 
-        if ($this->use_lowercase)
+        if ($this->use_lowercase) {
             $slug = strtolower($slug);
+        }
 
         $this->slug = $slug;
         return $this;
@@ -187,5 +187,4 @@ class Slug
         $this->space_char = $char;
         return $this;
     }
-
 }

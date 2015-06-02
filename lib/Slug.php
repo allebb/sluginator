@@ -112,7 +112,7 @@ class Slug
     }
 
     /**
-     * Sets a new set of reules of which should be handled as 'space' characters.
+     * Sets a new set of rules of which should be handled as 'space' characters.
      * @param array $values
      * @return \Ballen\Sluginator\Sluginator
      */

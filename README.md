@@ -1,9 +1,9 @@
 Sluginator
 ==========
 
-[![Build Status](https://travis-ci.org/bobsta63/sluginator.svg)](https://travis-ci.org/bobsta63/sluginator)
-[![Code Coverage](https://scrutinizer-ci.com/g/bobsta63/sluginator/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/bobsta63/sluginator/?branch=master)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/bobsta63/sluginator/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bobsta63/sluginator/?branch=master)
+[![Build Status](https://travis-ci.org/allebb/sluginator.svg)](https://travis-ci.org/allebb/sluginator)
+[![Code Coverage](https://scrutinizer-ci.com/g/allebb/sluginator/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/allebb/sluginator/?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/allebb/sluginator/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/allebb/sluginator/?branch=master)
 [![Latest Stable Version](https://poser.pugx.org/ballen/sluginator/v/stable)](https://packagist.org/packages/ballen/sluginator)
 [![Latest Unstable Version](https://poser.pugx.org/ballen/sluginator/v/unstable)](https://packagist.org/packages/ballen/sluginator)
 [![License](https://poser.pugx.org/ballen/sluginator/license)](https://packagist.org/packages/ballen/sluginator)

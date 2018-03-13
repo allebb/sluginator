@@ -39,7 +39,7 @@ To add this library to your project, edit your ``composer.json`` file and add th
 Then install the package like so:
 
 ```
-composer install ballen/sluginator --no-dev
+composer require ballen/sluginator
 ```
 
 ### Standalone

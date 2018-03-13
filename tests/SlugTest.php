@@ -1,8 +1,9 @@
 <?php
+
 use Ballen\Sluginator\Slug;
 use \PHPUnit_Framework_TestCase;
 
-class SluglTest extends PHPUnit_Framework_TestCase
+class SlugTest extends PHPUnit_Framework_TestCase
 {
 
     protected $test_string = 'A very long word that contains some spaces, punctuation and some strong charaters!!';
@@ -16,14 +17,16 @@ class SluglTest extends PHPUnit_Framework_TestCase
     public function testSimpleSlugWithGetSlugMethod()
     {
         $slug = new Slug($this->test_string);
-        $this->assertEquals('A-very-long-word-that-contains-some-spaces-punctuation-and-some-strong-charaters', $slug->build());
+        $this->assertEquals('A-very-long-word-that-contains-some-spaces-punctuation-and-some-strong-charaters',
+            $slug->build());
     }
 
     public function testSimpleSlugToLowerCase()
     {
         $slug = new Slug($this->test_string);
         $slug->setUseLowercase();
-        $this->assertEquals('a-very-long-word-that-contains-some-spaces-punctuation-and-some-strong-charaters', $slug->build());
+        $this->assertEquals('a-very-long-word-that-contains-some-spaces-punctuation-and-some-strong-charaters',
+            $slug->build());
     }
 
     public function testSlugWithUrlEncoding()
@@ -37,28 +40,32 @@ class SluglTest extends PHPUnit_Framework_TestCase
     {
         $slug = new Slug($this->test_string);
         $slug->addSpaceValue('!');
-        $this->assertEquals('A-very-long-word-that-contains-some-spaces-punctuation-and-some-strong-charaters--', $slug->build());
+        $this->assertEquals('A-very-long-word-that-contains-some-spaces-punctuation-and-some-strong-charaters--',
+            $slug->build());
     }
-    
+
     public function testCustomSpaceCharacter()
     {
         $slug = new Slug($this->test_string);
         $slug->setSpaceCharacter(' ');
-        $this->assertEquals('A very long word that contains some spaces punctuation and some strong charaters', $slug->build());
+        $this->assertEquals('A very long word that contains some spaces punctuation and some strong charaters',
+            $slug->build());
     }
 
     public function testCustomRemoveItem()
     {
         $slug = new Slug($this->test_string);
         $slug->addRemoveValue('a')->build();
-        $this->assertEquals('A-very-long-word-tht-contins-some-spces-punctution-nd-some-strong-chrters', $slug->getSlug());
+        $this->assertEquals('A-very-long-word-tht-contins-some-spces-punctution-nd-some-strong-chrters',
+            $slug->getSlug());
     }
 
     public function testCustomSpaceConfiguration()
     {
         $slug = new Slug($this->test_string);
         $slug->setSpaceValues([' ', ',', '!']);
-        $this->assertEquals('A-very-long-word-that-contains-some-spaces--punctuation-and-some-strong-charaters--', $slug->build());
+        $this->assertEquals('A-very-long-word-that-contains-some-spaces--punctuation-and-some-strong-charaters--',
+            $slug->build());
     }
 
     public function testCustomRemoveConfiguration()

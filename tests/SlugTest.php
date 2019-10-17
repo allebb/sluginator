@@ -1,7 +1,6 @@
 <?php
 
 use Ballen\Sluginator\Slug;
-use \PHPUnit_Framework_TestCase;
 
 class SlugTest extends PHPUnit_Framework_TestCase
 {

@@ -1,6 +1,6 @@
 /nbproject
 /vendor
-/.idea/
+/.idea
 composer.phar
 .DS_Store
 Thumbs.db

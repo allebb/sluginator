@@ -13,9 +13,9 @@ A URL slug creation and sanitisation library for PHP, simply feed it a string (s
 Requirements
 ------------
 
-This library is developed and tested for PHP 5.3+
+This library is developed for PHP 5.3+
 
-This library is unit tested against PHP 5.3, 5.4, 5.5, 5.6, HHVM and 7.0!
+This library is unit tested against PHP 5.6, 7.0, 7.1, 7.2, 7.3 and 7.4!
 
 License
 -------
@@ -28,15 +28,7 @@ I highly recommend the use of [Composer](https://getcomposer.org/) when installi
 
 ### Composer
 
-To add this library to your project, edit your ``composer.json`` file and add the following lines (or update your existing ``require`` section with the library like so):
-
-```php
-"require": {
-        "ballen/sluginator": "~1.0"
-}
-```
-
-Then install the package like so:
+Add this dependency to your project by running:
 
 ```
 composer require ballen/sluginator
@@ -44,7 +36,7 @@ composer require ballen/sluginator
 
 ### Standalone
 
-You can use the library "standalone" by downloading it from the [GitHub releases section](https://github.com/bobsta63/distical/releases), extracting the files to a place on your server and then adding the "include" into your code like so:
+You can use the library "standalone" by downloading it from the [GitHub releases section](https://github.com/allebb/sluginator/releases), extracting the files to a place on your server and then adding the "include" into your code like so:
 
 ```php
 require_once 'path/to/Sluginator/lib/Slug.php';
@@ -91,7 +83,7 @@ In the above example we have request that the slug character case remains untouc
 
 This library is fully unit tested using [PHPUnit](https://phpunit.de/).
 
-I use TravisCI for continuous integration, which triggers tests for PHP 5.3, 5.4, 5.5, 5.6, 7.0 and HHVM every time a commit is pushed.
+I use TravisCI for continuous integration, which triggers the unit tests each time a commit is pushed.
 
 If you wish to run the tests yourself you should run the following:
 

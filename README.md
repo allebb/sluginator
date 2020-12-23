@@ -1,8 +1,8 @@
 Sluginator
 ==========
 
-[![Build Status](https://travis-ci.org/allebb/sluginator.svg)](https://travis-ci.org/allebb/sluginator)
-[![Code Coverage](https://scrutinizer-ci.com/g/allebb/sluginator/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/allebb/sluginator/?branch=master)
+[![Build](https://github.com/allebb/sluginator/workflows/build/badge.svg)](https://github.com/allebb/sluginator/actions)
+[![Code Coverage](https://codecov.io/gh/allebb/sluginator/branch/master/graph/badge.svg)](https://codecov.io/gh/allebb/sluginator)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/allebb/sluginator/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/allebb/sluginator/?branch=master)
 [![Latest Stable Version](https://poser.pugx.org/ballen/sluginator/v/stable)](https://packagist.org/packages/ballen/sluginator)
 [![Latest Unstable Version](https://poser.pugx.org/ballen/sluginator/v/unstable)](https://packagist.org/packages/ballen/sluginator)
@@ -13,10 +13,9 @@ A URL slug creation and sanitisation library for PHP, simply feed it a string (s
 Requirements
 ------------
 
-This library is developed for PHP 5.3+
+This library is unit tested against PHP 7.3, 7.4 and 8.0!
 
-This library is unit tested against PHP 5.6, 7.0, 7.1, 7.2, 7.3 and 7.4!
-
+If you need to use an older version of PHP, you should instead install the 2.x version of this library (see below for details).
 License
 -------
 
@@ -28,10 +27,16 @@ I highly recommend the use of [Composer](https://getcomposer.org/) when installi
 
 ### Composer
 
-Add this dependency to your project by running:
+Add the latest version of Sluginator to your project by running:
 
 ```
 composer require ballen/sluginator
+```
+
+**If you need to use an older version of PHP, version 1.x.x supports PHP 5.6, 7.0, 7.1 and 7.2, you can install this version using Composer with this command instead:**
+
+```shell
+composer require ballen/sluginator ^1.0
 ```
 
 ### Standalone
@@ -83,7 +88,7 @@ In the above example we have request that the slug character case remains untouc
 
 This library is fully unit tested using [PHPUnit](https://phpunit.de/).
 
-I use TravisCI for continuous integration, which triggers the unit tests each time a commit is pushed.
+I use GitHub Actions for continuous integration, which triggers the unit tests each time a commit is pushed.
 
 If you wish to run the tests yourself you should run the following:
 

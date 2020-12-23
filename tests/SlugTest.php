@@ -1,8 +1,9 @@
 <?php
 
 use Ballen\Sluginator\Slug;
+use PHPUnit\Framework\TestCase;
 
-class SlugTest extends PHPUnit_Framework_TestCase
+class SlugTest extends TestCase
 {
 
     protected $test_string = 'A very long word that contains some spaces, punctuation and some strong charaters!!';

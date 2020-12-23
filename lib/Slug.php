@@ -1,4 +1,5 @@
-<?php namespace Ballen\Sluginator;
+<?php
+namespace Ballen\Sluginator;
 
 /**
  * Sluginator
@@ -6,9 +7,8 @@
  * a blog title) and it will create a URL friendly slug.
  *
  * @author  Bobby Allen <ballen@bobbyallen.me>
- * @version 1.0.1
  * @license http://opensource.org/licenses/MIT
- * @link    https://github.com/bobsta63/sluginator
+ * @link    https://github.com/allebb/sluginator
  * @link    http://www.bobbyallen.me
  */
 class Slug

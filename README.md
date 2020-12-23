@@ -16,7 +16,6 @@ Requirements
 This library is unit tested against PHP 7.3, 7.4 and 8.0!
 
 If you need to use an older version of PHP, you should instead install the 2.x version of this library (see below for details).
-License
 
 ## License
 
